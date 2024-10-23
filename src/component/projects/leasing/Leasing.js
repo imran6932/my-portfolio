@@ -6,7 +6,7 @@ const Leasing = () => {
     <>
       <ProjectNavbar></ProjectNavbar>
       <div className="row justify-content-evenly main-project">
-        <div className="col-10">
+          <div className="col-10">
           <h2 className="project-header">
             Leasing Scraper : Car Leasing Price Tracking Web App
           </h2>

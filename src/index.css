@@ -63,6 +63,10 @@ nav {
   margin-bottom: 60px;
 }
 
+#homecol1 p {
+  text-align: justify;
+}
+
 #home h1 span {
   color: #2eb2d3;
 }
@@ -96,6 +100,7 @@ hr {
 #heading {
   filter: drop-shadow(1px 1px 5px var(--background));
 }
+
 #profile-img {
   width: 350px;
   height: 350px;
@@ -105,23 +110,34 @@ hr {
 
 .skill-container {
   color: white;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 #skills-content {
   width: 100%;
 }
+
 .experience-container {
   color: white;
 }
 
 #experience-content {
   width: 100%;
+  margin: 5px;
+
+}
+
+#experience-details ul {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #skillcol1,
 #skillcol2 {
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-right: 10px;
+
 }
 
 #about-skills {
@@ -156,11 +172,11 @@ hr {
 .project-container {
   display: flex;
 
-  justify-content: space-between; /* Evenly distributes boxes with space between */
-
-  padding: 20px;
+  justify-content: space-between;
+  /* Evenly distributes boxes with space between */
   margin: 20px 70px;
-  /* flex-direction: column; */
+  margin-top: -25px;
+
 }
 
 .project-container a {
@@ -173,7 +189,6 @@ hr {
   height: 300px;
   width: 300px;
   padding: 15px;
-  margin-top: 20px;
   margin-bottom: 20px;
   background-color: #21242b;
   color: white;
@@ -191,6 +206,7 @@ hr {
   color: var(--background);
   margin-top: 20px;
 }
+
 .projectbox p {
   color: white;
   text-align: justify;
@@ -216,6 +232,50 @@ hr {
     justify-content: center;
     display: flex;
   }
+
+  .projectbox {
+    min-width: 300px !important;
+    position: relative;
+    left: -80px !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+  .projectbox {
+    position: relative;
+    right: 50px;
+  }
+ 
+}
+
+@media only screen and (max-width: 390px) {
+ 
+}
+
+@media only screen and (max-width: 414px) {
+  .projectbox {
+    position: relative;
+    right: 13px !important;
+
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .projectbox {
+    position: relative;
+    right: 55px !important;
+
+  }
+
+  .project-container {
+    margin-left: 60px !important;
+  }
+  .footer-link-tag {
+    font-size: 15px;
+  }
+
 }
 
 @media only screen and (max-width: 430px) {
@@ -238,11 +298,19 @@ hr {
   #home-btn button {
     height: 40px !important;
   }
+
   .footer-contact {
     padding-left: 0px !important;
   }
+
   .footer-link-tag {
     padding-right: 0px !important;
+  }
+
+  .project-container {
+    margin-right: 30px;
+    margin-left: 20px;
+
   }
 }
 
@@ -254,15 +322,23 @@ hr {
   #home-btn button {
     height: 40px !important;
   }
+
   #footer-container {
     flex-direction: column;
   }
+
   .footer-contact {
     padding-left: 0px !important;
   }
+
   .footer-link-tag {
     padding-right: 0px !important;
   }
+
+  .projectbox {
+    margin-left: 40px !important;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -304,6 +380,13 @@ hr {
   #homecol1 {
     margin-top: 70px;
   }
+
+  .projectbox {
+    margin: -20px;
+    margin-top: 10px;
+
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -318,6 +401,12 @@ hr {
   #homecol1 {
     margin-top: 70px;
   }
+
+  .projectbox {
+    margin: -35px;
+    margin-top: 10px;
+
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -330,6 +419,7 @@ hr {
   #homecol1 {
     margin-top: 80px;
   }
+ 
 }
 
 .main-project {
@@ -341,10 +431,12 @@ hr {
 .project-header {
   color: var(--background);
 }
+
 .project-description,
 .project-points {
   text-align: justify;
 }
+
 #icons {
   font-size: 30px;
   cursor: pointer;
@@ -386,11 +478,15 @@ hr {
   width: 100%;
   padding: 2px;
 }
+
 .footer-contact {
   padding-left: 120px;
+  font-size: 15px;
 }
+
 .footer-link-tag {
   padding-right: 170px;
+  font-size: 15px;
 }
 
 .link-tag {

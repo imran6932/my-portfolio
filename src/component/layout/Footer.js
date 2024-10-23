@@ -2,13 +2,13 @@ function Footer() {
   return (
     <>
       <div id="footer-container">
-        <div className="footer-contact text-center fs-5">
+        <div className="footer-contact text-center">
           <p>&copy; 2024 Imran Ansari</p>
         </div>
 
         <div className="footer-link-tag text-center">
-          <span className="contact-span fs-5">Contact: </span>
-          <span className="email-span fs-5">
+          <span className="contact-span">Contact: </span>
+          <span className="email-span">
             <a className="link-tag" href="mailto:imransxcr53@gmail.com">
               imransxcr53@gmail.com
             </a>
