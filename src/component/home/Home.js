@@ -50,7 +50,7 @@ function Home() {
 
       <div className="experience-container" id="experience-content">
         <div className="row justify-content-evenly">
-          <div className="col-sm-5 pb-5">
+          <div className="col-sm-5" id="experience-details">
             <h1 className="mt-4" id="heading">
               Experience
             </h1>
@@ -59,7 +59,7 @@ function Home() {
             <p>Relu Consultancy | October 2021-Present</p>
 
             <h2>Responsibility</h2>
-            <ul>
+            <ul className="mt-4">
               <li>
                 Developed and maintaining Dynamic web application using Django.
               </li>
@@ -79,7 +79,7 @@ function Home() {
             </ul>
           </div>
 
-          <div className="col-sm-5 mt-4 pb-5">
+          <div className="col-sm-5 mt-4">
             <div className="text-center mt-5" id="img-circle"></div>
           </div>
         </div>
@@ -111,8 +111,8 @@ function Home() {
             <img src="/Images/git.png" alt="logo" />
           </div>
         </div>
-        <br />
-        <br />
+        {/* <br />
+        <br /> */}
         <div className="row justify-content-evenly">
           <div className="col-sm-3 mt-4 skill-logo">
             <img src="/Images/html.png" alt="logo" />
@@ -136,11 +136,11 @@ function Home() {
       </div>
       <hr />
 
-      <div className="container-fluid" id="project-content">
+      <div className="container-fluid pb-5" id="project-content">
         <h1 className="text-center mt-3 text-white">Projects</h1>
        
           <div className="row project-container">
-            <div className="projectbox">
+            <div className="projectbox mt-5">
               <Link to="/triggify">
                 <h4>Triggify</h4>
                 <p>
@@ -152,7 +152,7 @@ function Home() {
               </Link>
             </div>
 
-            <div className="projectbox">
+            <div className="projectbox mt-5">
               <Link to="/nhai">
                 <h4>NHAI Dashboard</h4>
                 <p>
@@ -164,7 +164,7 @@ function Home() {
               </Link>
             </div>
 
-            <div className="projectbox imran2">
+            <div className="projectbox mt-5 imran2">
               <Link to="/shotlocker">
                 <h4>Shotlocker</h4>
                 <p>
@@ -176,7 +176,7 @@ function Home() {
               </Link>
             </div>
 
-            <div className="projectbox imran2">
+            <div className="projectbox mt-5 imran2">
               <Link to="/leasing-scraper">
                 <h4>Leasing Scraper</h4>
                 <p>
