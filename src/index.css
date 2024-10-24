@@ -221,6 +221,12 @@ hr {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 344px) {
+  #icons {
+    font-size: 20px !important;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   #homecol1 {
     text-align: center;
@@ -239,25 +245,34 @@ hr {
     left: -80px !important;
   }
 
-
-}
-
-@media only screen and (max-width: 375px) {
-  .projectbox {
-    position: relative;
-    right: 50px;
+  .footer-link-tag span {
+    margin-left: 30px;
   }
- 
+
+  .footer-contact p {
+    margin-right: -100px !important;
+
+  }
+
+
 }
 
 @media only screen and (max-width: 390px) {
- 
+  .projectbox {
+    min-width: 300px;
+    position: relative;
+    left: -65px !important;
+    margin: 30px !important;
+
+  }
 }
 
 @media only screen and (max-width: 414px) {
   .projectbox {
+    min-width: 300px;
     position: relative;
-    right: 13px !important;
+    left: -60px !important;
+    margin: 30px !important;
 
   }
 }
@@ -272,8 +287,23 @@ hr {
   .project-container {
     margin-left: 60px !important;
   }
+
   .footer-link-tag {
     font-size: 15px;
+
+  }
+
+  .footer-link-tag span {
+    margin-left: 30px;
+  }
+
+  .footer-contact p {
+    margin-right: -100px !important;
+
+  }
+
+  #footer-container {
+    padding-bottom: 20px !important;
   }
 
 }
@@ -307,10 +337,8 @@ hr {
     padding-right: 0px !important;
   }
 
-  .project-container {
-    margin-right: 30px;
-    margin-left: 20px;
-
+  .footer-contact p {
+    margin-right: -100px !important;
   }
 }
 
@@ -333,10 +361,20 @@ hr {
 
   .footer-link-tag {
     padding-right: 0px !important;
+
   }
 
   .projectbox {
     margin-left: 40px !important;
+  }
+
+  .footer-contact p {
+    margin-right: -70px;
+
+  }
+
+  .footer-link-tag span {
+    margin-left: 40px;
   }
 
 }
@@ -387,6 +425,18 @@ hr {
 
   }
 
+  .footer-contact p {
+    margin-left: 30px !important;
+  }
+
+  .link-container {
+    margin-left: -30px !important;
+
+  }
+
+  .footer-link-tag {
+    margin-left: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -407,6 +457,27 @@ hr {
     margin-top: 10px;
 
   }
+
+  .footer-contact p {
+    margin-left: -30px !important;
+  }
+
+  .footer-link-tag {
+    margin-left: -15px !important;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .email-span a {
+    margin-left: -50px;
+
+  }
+}
+
+@media only screen and (max-width: 853px) {
+  .footer-contact {
+    margin-left: -50px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -419,7 +490,7 @@ hr {
   #homecol1 {
     margin-top: 80px;
   }
- 
+
 }
 
 .main-project {
@@ -468,32 +539,25 @@ hr {
 
 #footer-container {
   color: white;
-  padding: 10px;
+  padding: 5px;
   display: flex;
-  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 5px;
 }
 
-.footer-link-tag,
-.footer-contact {
-  width: 100%;
-  padding: 2px;
+.footer-item {
+  margin: 5px;
+  font-size: 18px;
+  
 }
 
-.footer-contact {
-  padding-left: 120px;
-  font-size: 15px;
+.contact-span {
+  margin-left: 5px;
 }
 
-.footer-link-tag {
-  padding-right: 170px;
-  font-size: 15px;
-}
-
-.link-tag {
+.footer-item a{
   text-decoration: none;
   color: whitesmoke;
-}
-
-.email-span {
-  margin-right: 20px;
 }
