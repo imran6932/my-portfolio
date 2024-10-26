@@ -37,8 +37,13 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            # go to project direcory
+            cd /home/my-portfolio
+
             # Stop and remove any existing container
             docker-compose down
 
             # Start a new container using docker-compose
             docker-compose up --build -d
+
+            echo "successfully build and deployed"
