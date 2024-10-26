@@ -14,7 +14,7 @@ function Home() {
             </h1>
             <br />
             <p>
-              Pythone backend Developer with 3 years of experience building
+              Python backend Developer with 3 years of experience building
               scalable web application. Proficient in Django, database
               management, and cloud services. Recently expanding into full-stack
               development with React. Passionate about delivering

@@ -3,6 +3,7 @@ version: '3.8'
 services:
 
   react-app:
+    container_name: react-portfolio
     build: .
     ports:
       - "80:80"
@@ -10,4 +11,4 @@ services:
 
     volumes:
       #     # Mount the Let's Encrypt directory from your host to the container
-      - /etc/letsencrypt:/etc/letsencrypt:ro # Mount as read-only
+      - /etc/letsencrypt:/etc/letsencrypt

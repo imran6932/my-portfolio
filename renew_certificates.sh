@@ -1,4 +1,5 @@
 #!/bin/bash
 
 sudo certbot renew
-docker exec -it react-app  -s reload
+cd /home/my-portfolio
+docker exec -it react-portfolio  -s reload
